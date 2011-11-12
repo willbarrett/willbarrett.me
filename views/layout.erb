@@ -3,6 +3,12 @@
   <head>
     <title><%= @title %></title>
     <link rel="stylesheet" href="/stylesheet.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript">
+      function recordOutboundLink(link, category, action) {
+        _gat._getTrackerByName()._trackEvent(category, action);
+        setTimeout('document.location = "' + link.href + '"', 100);
+      }
+    </script>
   </head>
   <body>
     <div class="container">
