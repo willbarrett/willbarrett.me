@@ -10,3 +10,7 @@ end
 get '/stylesheet.css' do
   sass :stylesheet
 end
+
+get '/about' do
+  redirect '/'
+end
