@@ -14,3 +14,7 @@ end
 get '/about' do
   redirect '/'
 end
+
+get '/javascript' do
+  erb :javascript, :layout => :"clean"
+end
